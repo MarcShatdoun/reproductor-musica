@@ -9,19 +9,36 @@ const next = document.querySelector(".next");
 
 const musica = [
     { 
-        titulo: "The Empitness Machine",
+        titulo: "The Emptiness Machine",
         nombre: "Linkin Park",
-        src: "music/The_Emptiness_Machine.mp3"
+        src: "music/The_Emptiness_Machine.mp3",
+        bg:"img/background.webp"
+    },
+    {
+        titulo: "Don't Know Yet",
+        nombre: "Akuma Nihmune",
+        src: "music/Dont_Know_Yet.mp3",
+        bg:"img/dontknowBg.webp"
+
     },
     {
         titulo: "Cry",
         nombre: "Cigarettes After Sex",
-        src: "music/Cigarettes_After_Sex.mp3"
+        src: "music/Cigarettes_After_Sex.mp3",
+        bg:"img/cryBg.webp"
+        
     },
     {
-        titulo: "Daisy (Cover)",
+        titulo: "I Kissed a Girl",
+        nombre: "Katty Perry",
+        src: "music/I_Kissed_a_Girl.mp3",
+        bg:"img/ikissedagirlBg.webp"
+    },
+    {
+        titulo: "Daisy (Cover) Ft. Lucy Pyre",
         nombre: "Akuma Nihmune",
-        src: "music/Daisy.mp3"
+        src: "music/Daisy.mp3",
+        bg:"img/DaisyBg.webp"
     }
 ]
 
@@ -31,10 +48,12 @@ function updateMusic() {
     titulo.textContent = musica[musicIndex].titulo;
     nombre.textContent = musica[musicIndex].nombre;
     cancion.src = 'media/' + musica[musicIndex].src;
+    document.body.style.backgroundImage = `url(media/${musica[musicIndex].bg})`;
     cancion.addEventListener("loadeddata", () => {
         progress.max = cancion.duration;
         
     })
+    console.log(`url("media/"${musica[musicIndex].bg})`)
    
 }
 
