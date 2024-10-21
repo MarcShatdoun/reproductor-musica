@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Reproductor</title>
+</head>
+<body>
+
+    <div class="container">
+        <section class="reproductor">
+            <h1>Titulo actual (Dinamico en un futuro)</h1>
+            <p>Nombre</p>
+            <audio id="cancion">
+                <source src=" " />
+            </audio>
+            <input type="range" value="0" id="progress"/>
+            <div class="control">
+                <button class="previous">
+                    <i class="bi bi-rewind-fill"></i>
+                </button>
+                <button class="playPause">
+                    <i class="bi bi-play-fill"></i>
+                </button>
+                <button class="next">
+                    <i class="bi bi-fast-forward-fill"></i>
+                </button>
+            </div>
+        </section>
+    </div>
+    
+    
+
+    <script src="js/app.js"></script>
+</body>
+</html>
