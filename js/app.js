@@ -31,7 +31,7 @@ const musica = [
     {
         titulo: "I Kissed a Girl",
         nombre: "Katty Perry",
-        src: "music/I_Kissed_a_Girl.mp3",
+        src: "music/I_Kissed_A_Girl.mp3",
         bg:"img/ikissedagirlBg.webp"
     },
     {
